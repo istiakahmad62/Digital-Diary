@@ -1,0 +1,25 @@
+{% extends "to_do_app/base.html" %}
+{% load static %}
+
+{% block page_title %}
+    Search Page
+{% endblock %}
+
+{% block css_file %}
+    <link rel="stylesheet" href="{% static 'to_do_app/index.css' %}" />
+{% endblock %}
+
+{% block content %}
+
+    <div class="custom-form">
+        <h3>Previous Tasks</h3>
+
+        <form action="{% url "search-page" %}" method="POST">
+            {% csrf_token %}
+            {% include "./includes/include.html" %}
+        </form>
+    </div>
+
+    {% include "./includes/include-task-list.html" %}
+
+{% endblock %}

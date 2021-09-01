@@ -1,0 +1,11 @@
+{% for task in tasks %}
+    <div class="custom-list">
+        <h3>{{task.title}} on {{task.date|date:"d F, Y, H : i : a "}}</h3>
+        <div>
+            <a href="{% url "edit" task.id %}"><i class='fas fa-edit'></i></a>
+            <a href="{% url "delete" task.id %}"><i class='far fa-trash-alt'></i></a>
+        </div>
+        
+    </div>
+
+{% endfor %} 

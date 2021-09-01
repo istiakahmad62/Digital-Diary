@@ -1,0 +1,21 @@
+.main-nav {
+    margin: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(75, 6, 139)
+}
+
+.main-nav a {
+    font-size: 1.25rem;
+    color: white;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    font-size: 1.3rem;
+    color: rgb(187, 47, 47);
+}

@@ -1,0 +1,21 @@
+{% extends "to_do_app/base.html" %}
+{% load static %}
+
+  {% block page_title %}To Do App{% endblock %}
+
+  {% block css_file %}
+    <link rel="stylesheet" href="{% static 'to_do_app/index.css' %}" />
+  {% endblock %}
+
+  {% block content %}
+    <div class="custom-form">
+      <h2>Daily Tasks</h2>
+      <form action="{% url "index" %}" method="post">
+        {% csrf_token %}
+        {% include "./includes/include.html" %}
+      </form>
+    </div>
+
+    {% include "./includes/include-task-list.html" %}
+
+{% endblock %}

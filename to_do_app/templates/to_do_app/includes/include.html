@@ -1,0 +1,11 @@
+
+{% for field in form %}
+<div class="row mb-3">
+    <div class="col-sm-10">
+        {{field.label_tag}}
+        {{field}}
+    </div>
+</div>
+{% endfor %}
+
+<button type="submit" class="customBtn btn btn-primary">{{button_name}}</button>

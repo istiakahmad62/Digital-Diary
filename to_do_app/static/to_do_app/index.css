@@ -1,0 +1,65 @@
+.custom-form {
+  margin-top: 1rem;
+  margin-left: 35%;
+  padding: 5rem;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid rgb(156, 156, 156);
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.custom-form form {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.custom-form form label {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.custom-form form input {
+  width: 10rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+}
+
+.customBtn {
+  width: 75%;
+}
+
+.custom-list {
+  margin: 1rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: white;
+  border: 1px solid rgb(75, 6, 139);
+  border-radius: 5px;
+  background-color: rgb(75, 6, 139);
+}
+
+.custom-list div {
+  display: inline-block;
+  justify-content: space-evenly;
+}
+
+.custom-list a,
+.custom-list a:hover {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.custom-list a {
+  padding: 0 0 0 2rem;
+  color: red;
+}
+
+.custom-list a:hover {
+  color: rgb(179, 0, 69);
+}
