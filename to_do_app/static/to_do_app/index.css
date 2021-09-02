@@ -29,6 +29,7 @@
 
 .customBtn {
   width: 75%;
+  margin-top: 10px;
 }
 
 .custom-list {
@@ -53,6 +54,7 @@
 .custom-list a:hover {
   text-decoration: none;
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .custom-list a {

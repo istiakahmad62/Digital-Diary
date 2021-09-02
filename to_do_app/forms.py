@@ -25,6 +25,6 @@ class TaskModelForm(forms.ModelForm):
 
 class CalendarForm(forms.Form):
     date = forms.DateTimeField(
-        label = 'Search Date',
+        label = 'Choose Date',
         widget = DateInputTemplate,
     )

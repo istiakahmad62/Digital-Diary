@@ -9,11 +9,16 @@
 
   {% block content %}
     <div class="custom-form">
-      <h2>Are you sure you want to delete {{object}}? </h2>
-      <form method="post">
-        {% csrf_token %}
-        {% include "./includes/include.html" %}
-      </form>
+      <h2>Are you sure you want to delete {{object.title|title}}? </h2>
+      <main>
+        <form method="post">
+          {% csrf_token %}
+          {% include "./includes/include.html" %}
+          <a id="cancel-btn" href="{% url "index" %}">
+            <button type="button" class="customBtn btn btn-primary">Cancel</button>
+          </a>
+        </form>
+      </main>
     </div>
 
 {% endblock %}
